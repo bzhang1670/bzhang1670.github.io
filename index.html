@@ -80,7 +80,16 @@
     opacity: 1;
 }
 
+.projectlink {
+    color: #1f8dd6;
+    text-decoration: none;
+    opacity: 0.8;
+}
 
+.projectlink:hover {
+    color: red;
+    opacity: 1;
+}
 
 </style>
 
@@ -99,7 +108,7 @@
 </div>
 
 <div class="splash-container background">
-    <div id="splash" class="splash">
+    <div class="splash">
         <h1 class="splash-head">Brian Zhang</h1>
         <p class="splash-subhead">
             Software Engineer
@@ -117,26 +126,39 @@
         <div class="pure-g">
 
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-            <a href="http://octopart.com/blog/archives/2014/2/hackcooper-2014%2521">
 
                 <img src="img/common/sentry.png" width="300" height="200">
 
                 <h3 style="color: #1f8dd6;">
-                    Facial Recognition Nerf Sentry <h4> Hardware + Software </h4>
+                    Facial Recognition Nerf Sentry <br> 
+                    <a href="https://github.com/bzhang1670/sentry" class="projectlink">
+                        <i class="fa fa-github fa-lg"> </i> Github
+                    </a> 
+                    <a href="http://octopart.com/blog/archives/2014/2/hackcooper-2014%2521" class="projectlink">
+                        <i class="fa fa-comment"> </i> Blogpost
+                    </a>
                 </h3>
+                <h4> Hardware + Software </h4>
+
                 <p>
                     Hack made for Hack Cooper 2014. A webcam is attached to a Nerf gun which is attached to a worm-geared stepper motor. When a face is detected (using OpenCV) in the video stream from the webcam, the gun turns towards the face and a servo pulls back the trigger. Everything is controlled through an Arduino with a motor shield.               
                 </p>
-            </a>
-            <a class="pure-button" href="" > <i class="fa fa-github fa-lg" style="color:white"></i> Check it out on github! </a>
-            </div>
+                        </div>
 
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/nsyz.jpg" width="300" height="200">
                 <h3 class="content-subhead">
-                    Web Explorer
-                    <h4> Software </h4>
+                    Web Explorer <br>
+                    <a href="Web-Explorer/templates/Homepage.html" class="projectlink">
+                        <i class="fa fa-github fa-lg"> </i>Demo
+                    </a> 
+                    <a href="http://octopart.com/blog/archives/2014/2/hackcooper-2014%2521" class="projectlink">
+                        <i class="fa fa-comment"> </i> Blogpost
+                    </a>
+
                 </h3>
+                     <h4> Software </h4>
+
                 <p>
 
                     Transform any webpage into a simple platform game with a bookmark. This project was designed for Mike Zamansky's Software development class at Stuyvesant.
@@ -307,14 +329,6 @@ $(function() {
         });
     });
 
-jQuery(function($){
-    var w = $(window), p = $('#splash'), wW, pO, pW;
-    $(new Image()).load(function(){
-        if((pO = p.offset().left) + (pW = p.outerWidth()) > (wW = w.width())){
-            w.scrollLeft(pO + (pW - wW) / 2);
-        }
-    }).attr('src', p.attr('src'));
-});
 
 </script>
 
