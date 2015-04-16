@@ -152,12 +152,16 @@
 
                 <h3 style="color: #1f8dd6;">
                     Web Explorer <br>
-                    <a href="Web-Explorer/templates/Homepage.html" class="projectlink">
-                        <i class="fa fa-github fa-lg"> </i> Demo
+                    <a href="https://github.com/bzhang1670/Web-Explorer" class="projectlink">
+                        <i class="fa fa-github fa-lg"> </i> Github
                     </a> 
                     |
-                    <a href="http://youtube.com" class="projectlink">
-                        <i class="fa fa-comment"> </i> Blogpost
+                    <a href="Web-Explorer/templates/Homepage.html" class="projectlink">
+                        <i class="fa fa-comment"> </i> Demo
+                    </a>
+                    |
+                    <a href="" class="projectlink">
+                        <i class="fa fa-play"> </i> Video
                     </a>
 
                 </h3>
@@ -324,7 +328,7 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
             if (target.length) {
             $('html,body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top - 50
                     }, 1000);
             return false;
             }
