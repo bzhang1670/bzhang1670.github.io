@@ -99,7 +99,7 @@
 </div>
 
 <div class="splash-container background">
-    <div class="splash" style="overflow: auto;">
+    <div id="splash" class="splash">
         <h1 class="splash-head">Brian Zhang</h1>
         <p class="splash-subhead">
             Software Engineer
@@ -306,6 +306,15 @@ $(function() {
         }
         });
     });
+
+jQuery(function($){
+    var w = $(window), p = $('#splash'), wW, pO, pW;
+    $(new Image()).load(function(){
+        if((pO = p.offset().left) + (pW = p.outerWidth()) > (wW = w.width())){
+            w.scrollLeft(pO + (pW - wW) / 2);
+        }
+    }).attr('src', p.attr('src'));
+});
 
 </script>
 
