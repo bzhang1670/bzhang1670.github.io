@@ -53,76 +53,6 @@
 /* Parallax base styles
   --------------------------------------------- */
 
-.parallax {
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 1px;
-    perspective: 1px;
-  }
-
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .parallax__layer--base {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-  }
-
-  .parallax__layer--back {
-    -webkit-transform: translateZ(-1px) scale(2);
-    transform: translateZ(-1px) scale(2);
-  }
-
-
-  /* demo styles
-  --------------------------------------------- */
-
-  * {
-    margin:0;
-    padding:0;
-  }
-
-  body {
-    font: 100% / 1.5 Arial;
-  }
-
-  .parallax {
-    font-size: 200%;
-  }
-
-   /* add some padding to force scrollbars */
-  .parallax__layer {
-    padding: 100vh 0;
-  }
-
-   /* centre the content in the parallax layers */
-  .title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-
-  /* misc
-  --------------------------------------------- */
-  .demo__info {
-    position: absolute;
-    z-index:100;
-    bottom: 1vh;
-    top: auto;
-    font-size:80%;
-    text-align:center;
-    width: 100%;
-  }
-
 .background {
     /*background-image: url("img/common/background.jpg");*/
     background-image: url("http://bigappled.com/wp-content/uploads/2014/12/New-York-City-Skyline.jpg");
@@ -220,7 +150,7 @@
                 <p>
                     Hack made for Hack Cooper 2014. A webcam is attached to a Nerf gun which is attached to a worm-geared stepper motor. When a face is detected (using OpenCV) in the video stream from the webcam, the gun turns towards the face and a servo pulls back the trigger. Everything is controlled through an Arduino with a motor shield.               
                 </p>
-                        </div>
+            </div>
 
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/nsyz.jpg" width="300" height="200">
@@ -254,9 +184,9 @@
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/justicemandala.png" width="300" height="200">
                 <h3 class="content-subhead">
-                    The Story of an Artist: Chris Soria<br>
+                    Chris Soria Documentary<br>
                     <a href="http://vimeo.com/68313206" class="projectlink">
-                        <i class="fa fa-play"> </i>Video
+                        <i class="fa fa-play"> </i> Video
                     </a>
                     <h4> Video </h4>
                 </h3>
@@ -269,7 +199,10 @@
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/clock.jpg" width="300" height="200">
                 <h3 class="content-subhead">
-                    Assembly Clock
+                    Assembly Clock <br>
+                    <a href="https://github.com/bzhang1670/Assembly-Clock" class="projectlink">
+                        <i class="fa fa-github fa-lg"> </i> Github
+                    </a> 
                     <h4> Hardware + Software </h4>
                 </h3>
                 <p>
@@ -280,7 +213,10 @@
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/Loudspkr.png" width="300" height="200">
                 <h3 class="content-subhead">
-                    Loudspkr
+                    Loudspkr <br>
+                    <a href="https://github.com/bzhang1670/stuyhacksNY" class="projectlink">
+                        <i class="fa fa-github fa-lg"> </i> Github
+                    </a> 
                     <h4> Software </h4>
                 </h3>
                 <p>
@@ -291,11 +227,14 @@
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/myostreetfighter.jpg" width="300" height="200">
                 <h3 class="content-subhead">
-                    Myo: Fighter of the Streets
+                    Myo: Fighter of the Streets <br>
+                    <a href="https://github.com/brianykim/CalTrashHacks" class="projectlink">
+                        <i class="fa fa-github fa-lg"> </i> Github
+                    </a> 
                     <h4> Hardware + Software </h4>
                 </h3>
                 <p>
-                    Calhacks 2014. Created a control system for Street Fighter II using Myo armband
+                    Calhacks 2014 top 10. Created a control system for Street Fighter II using Myo armband
                     from Thalmic Labs in a team of 3. Game performs actions based on motion and gesture inputs from the Myo. Uses the Myo API (C++) and Objective-C.
                 </p>
             </div>
@@ -303,14 +242,16 @@
              <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
                 <img src="img/common/portal.jpg" width="300" height="200">
                 <h3 class="content-subhead">
-                    Portal Immersion
+                    Portal Immersion <br>
+                    <a href="http://challengepost.com/software/portal-total-immersion" class="projectlink">
+                        Challengepost
+                    </a>
                     <h4> Hardware + Software </h4>
                 </h3>
                 <p>
                     Used Kinect, Oculus Rift, and Myo to create a hyper-realistic gaming experience. I primarily worked on the Kinect for movement and gesture control.
                 </p>
             </div>
-
         </div>
     </div>
 
@@ -321,7 +262,7 @@
     <!-- <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5"> -->
 
     <div id="education">
-         <div class="content">
+        <div class="content">
                  <h2 class="content-head is-center" align="center">Education</h2> <!--content-head-ribbon-->
 
                  <table style="width:100%">
@@ -348,7 +289,6 @@
                         </tr>
 
                  </table>
-        
         </div>
 
         <div class ="content" style="background-color: #e9e9e9">
@@ -424,48 +364,39 @@
 
                 </div>
             </div>
-
-
         </div>
-
-
     </div>
 
-
-        <div id="projects">
-
+        <div id="skills">
             <div class="content">
                 <h2 class="content-head is-center">Skills</h2>
 
                 <div class="pure-g">
-            <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                <h4>Software</h4>
-            </div>
+                    <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                        <h4>Software</h4>
+                    </div>
 
-            <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                <h4>Other</h4>
-            </div>
-
-        </div>
-
+                    <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                        <h4>Other</h4>
+                    </div>
+                </div>
             </div> 
         </div>
 
-     <div id="filler" class="content ribbon l-box-lrg pure-g">
-    </div>
+        <div id="filler" class="content ribbon l-box-lrg pure-g">
+        </div>
 
-    <div class="content">
+        <div class="content">
         <h2 class="content-head is-center">Contact Me</h2>
 
         <a href="http://www.linkedin.com/pub/brian-zhang/55/372/5b7/"><i class="fa fa-linkedin fa-lg" style="color:#1f8dd6"></i></a>
         <a href="https://github.com/bzhang1670"> <i class="fa fa-github fa-lg" style="color:#1f8dd6"></i></a>
         <a href="static/doc/Resume.pdf"> <i class="fa fa-file-text fa-lg" style="color:#1f8dd6"></i></a>
-    </div>
+        </div>
 
-    <div class="footer l-box is-center">
-        Website of Brian Zhang. Last updated April 2015.
-    </div>
-
+        <div class="footer l-box is-center">
+            Website of Brian Zhang. Last updated April 2015.
+        </div>
 </div>
 
 <script type="text/javascript">
