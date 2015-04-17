@@ -50,6 +50,79 @@
 
 <style>
 
+/* Parallax base styles
+  --------------------------------------------- */
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
+  }
+
+
+  /* demo styles
+  --------------------------------------------- */
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* add some padding to force scrollbars */
+  .parallax__layer {
+    padding: 100vh 0;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+  /* misc
+  --------------------------------------------- */
+  .demo__info {
+    position: absolute;
+    z-index:100;
+    bottom: 1vh;
+    top: auto;
+    font-size:80%;
+    text-align:center;
+    width: 100%;
+  }
+
 .background {
     /*background-image: url("img/common/background.jpg");*/
     background-image: url("http://bigappled.com/wp-content/uploads/2014/12/New-York-City-Skyline.jpg");
@@ -119,6 +192,8 @@
         </p>
     </div>
 </div>
+
+
 
 <div id="projects" class="content-wrapper">
     <div class="content">
@@ -384,7 +459,7 @@
 
         <a href="http://www.linkedin.com/pub/brian-zhang/55/372/5b7/"><i class="fa fa-linkedin fa-lg" style="color:#1f8dd6"></i></a>
         <a href="https://github.com/bzhang1670"> <i class="fa fa-github fa-lg" style="color:#1f8dd6"></i></a>
-        <a href="https://github.com/bzhang1670"> <i class="fa fa-file-text fa-lg" style="color:#1f8dd6"></i></a>
+        <a href="static/doc/Resume"> <i class="fa fa-file-text fa-lg" style="color:#1f8dd6"></i></a>
     </div>
 
     <div class="footer l-box is-center">
@@ -392,6 +467,7 @@
     </div>
 
 </div>
+
 <script type="text/javascript">
 
 $(function() {
