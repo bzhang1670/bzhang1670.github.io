@@ -6,7 +6,7 @@ TODO: Table for Experience, fix skills, contact me background
 <html lang="en">
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.2.0/trianglify.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript" id="jquery"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript" id="jquery"></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A layout example that shows off a responsive product landing page.">
@@ -52,14 +52,17 @@ TODO: Table for Experience, fix skills, contact me background
 
 <style>
 
-/* Parallax base styles
-  --------------------------------------------- */
+.contact-icon {
+    font-size: 300%; 
+    color: #1f8dd6;
+}
 
 .background {
-    background-image: url("http://bigappled.com/wp-content/uploads/2014/12/New-York-City-Skyline.jpg");
+    background-image: url("img/common/New-York-City-Skyline.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
+    height:800px;
 }
 
 .Row
@@ -92,6 +95,7 @@ TODO: Table for Experience, fix skills, contact me background
 }
 
 .projectlink:hover {
+    text-decoration: none;
     color: red;
     opacity: 1;
 }
@@ -99,7 +103,7 @@ TODO: Table for Experience, fix skills, contact me background
 </style>
 
 
-
+<body>
 
 <div id="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
@@ -107,7 +111,8 @@ TODO: Table for Experience, fix skills, contact me background
 
         <ul style="z-index: 100;" class="pure-menu-list">
             <li class="pure-menu-item"> <a href="#projects" class="pure-menu-link menuitem">Projects</a></li>
-            <li class="pure-menu-item"> <a href="#education" class="pure-menu-link menuitem">About</a></li>
+            <li class="pure-menu-item"> <a href="#about" class="pure-menu-link menuitem">About</a></li>
+            <li class="pure-menu-item"> <a href="#contact" class="pure-menu-link menuitem">Contact</a></li>
         </ul>
     </div>
 </div>
@@ -269,7 +274,7 @@ TODO: Table for Experience, fix skills, contact me background
 
     <!-- <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5"> -->
 
-    <div id="education">
+    <div id="about">
         <div class="content">
                  <h2 class="content-head is-center" align="center">Education</h2> <!--content-head-ribbon-->
 
@@ -305,27 +310,27 @@ TODO: Table for Experience, fix skills, contact me background
 
             <table class="table">
                 <tr>
-                    <td align="right"><img src="img/common/usc_viterbi_logo_transparent.png" style="height:50px;"></td>
+                    <td align="center"><img src="img/common/usc_viterbi_logo_transparent.png" style="height:50px;"></td>
                     <td><b>Viterbi Mobile Web Developer</b><br><span class="text-muted">Programmer</span></td> 
                     <td><b>University of Southern California</b><br>September 2014 – December 2014</td>
                 </tr>
                 <tr>
-                    <td align="right"> <img src="img/common/SBCScropped.png" style="width:50px;"></td>
+                    <td align="center"> <img src="img/common/SBCScropped.png" style="width:50px;"></td>
                     <td><b>Stony Brook Computing Society</b>><br><span class="text-muted">Member</span></td> 
                     <td><b>Stony Brook University</b><br>September 2013 – May 2014</td>
                 </tr>
                 <tr>
-                    <td align="right"> <img src="img/common/FIRST.gif" style="width:50px;"></td>
+                    <td align="center"> <img src="img/common/FIRST.gif" style="width:50px;"></td>
                     <td><b> FIRST Robotics</b>><br><span class="text-muted">Engineer</span></td>
                     <td><b>Stuyvesant High School</b><br>October 2009 – June 2013</td>
                 </tr>
                 <tr>
-                    <td align="right"><img src="img/common/spheres.png" style="height:50px;"></td>
+                    <td align="center"><img src="img/common/spheres.png" style="height:50px;"></td>
                     <td><b>MIT Zero Robotics</b>><br><span class="text-muted">Programmer</span></td> 
                     <td><b>Stuyvesant High School</b><br>September 2011 – December 2011</td>
                 </tr>
                 <tr>
-                    <td align="right"><img src="img/common/color-logo-original-version.png" style="height:50px;"></td>
+                    <td align="center"><img src="img/common/color-logo-original-version.png" style="height:50px;"></td>
                     <td><b>Math Team</b>><br><span class="text-muted">Competitor</span></td> 
                     <td><b>Stuyvesant High School</b><br>September 2009 – June 2013</td>
                 </tr>
@@ -344,7 +349,7 @@ TODO: Table for Experience, fix skills, contact me background
                                 <div class="panel panel-heading">
                                     <h3 class="panel-title">Programming</h3>
                                 </div>
-                                <div class="panel-body" style="height: 420px;">
+                                <div class="panel-body" style="width:25vw;">
                                     <b>
                                         Java <br>
                                         Python/Flask <br>
@@ -374,21 +379,21 @@ TODO: Table for Experience, fix skills, contact me background
                                 <div class="panel panel-heading">
                                     <h3 class="panel-title">Academic</h3>
                                 </div>
-                                <div class="panel-body" style="height: 420px;">
+                                <div class="panel-body" style="width:25vw;">
                                     <b>
                                         Electrical Engineering <br>
                                         Physics | 
-                                    </b> 
-                                        -Classical Mechanics <br> 
-                                        <span style="padding-left:4.5em"> -E&M </span> <br>
+                                    </b> <br>
+                                        <span style="padding-left:1em;"> Classical Mechanics </span> <br> 
+                                        <span style="padding-left:1em;"> E&M </span> <br>
                                     <b> 
                                         High Level Math | 
-                                    </b> 
-                                        -Multivariable Calculus <br> 
-                                        <span style="padding-left:8.5em;"> -Differential Equations </span> <br>
-                                        <span style="padding-left:8.5em;"> -Linear Algebra </span> <br>
-                                        <span style="padding-left:8.5em;"> -Probability and Statics </span> <br>
-                                        <span style="padding-left:8.5em;"> -(etc) </span> <br>                            
+                                    </b> <br>
+                                        <span style="padding-left:1em;"> Multivariable Calculus </span><br> 
+                                        <span style="padding-left:1em;"> Differential Equations </span> <br>
+                                        <span style="padding-left:1em;"> Linear Algebra </span> <br>
+                                        <span style="padding-left:1em;"> Probability and Statics </span> <br>
+                                        <span style="padding-left:1em;"> (etc) </span> <br>                           
                                     <br>
                                     Explored number theory, <br> 
                                     graph theory, etc. <br>
@@ -399,12 +404,12 @@ TODO: Table for Experience, fix skills, contact me background
                                 </div>
                             </div>
                         </td>
-                        <td>
+                            <td>
                             <div class="panel panel-primary">
                                 <div class="panel panel-heading">
                                     <h3 class="panel-title">Other</h3>
                                 </div>
-                                <div class="panel-body" style="height: 420px;">
+                                <div class="panel-body" style="width:25vw;">
                                     <b>
                                         GIMP <br>
                                         Final Cut Pro <br>
@@ -418,22 +423,19 @@ TODO: Table for Experience, fix skills, contact me background
             </div> 
         </div>
 
-        <div id="filler" class="content ribbon l-box-lrg pure-g">
-        </div>
-
-        <div id="contact" class="content tranglify-canvas" data-options='{"height": 300, "width": 300, "cell_size": 40, "x_colors": "YlGnBu"}'>
+        <div id="contact" class="content" style="background-image: url('img/common/pattern.png');
+                                                 background-size: cover;
+                                                 background-repeat: no-repeat;
+                                                 overflow: auto;
+                                                 height: 600px;">
+            <div id="inner-contact"></div>
             <h2 class="content-head is-center">Contact Me</h2>
+                <br><br><br><br>
                 <div class="is-center">
-                    <code class="language-javascript"> var pattern = Trianglify({
-  height: 300,
-  width: 300,
-  cell_size: 40});
-
-document.body.appendChild(pattern.canvas());
-      </code>
-                    <a href="http://www.linkedin.com/pub/brian-zhang/55/372/5b7/"><i class="fa fa-linkedin fa-lg" style="color:#1f8dd6"></i></a>
-                    <a href="https://github.com/bzhang1670"> <i class="fa fa-github fa-lg" style="color:#1f8dd6"></i></a>
-                    <a href="static/doc/Resume.pdf"> <i class="fa fa-file-text fa-lg" style="color:#1f8dd6"></i></a>
+                    <a href="http://www.linkedin.com/pub/brian-zhang/55/372/5b7/"><i class="fa fa-linkedin fa-lg contact-icon projectlink" 
+                       style="padding-right: 20vw;" ></i></a>
+                    <a href="https://github.com/bzhang1670"> <i class="fa fa-github fa-lg contact-icon projectlink" style="padding-right: 20vw;"></i></a>
+                    <a href="static/doc/Resume.pdf"> <i class="fa fa-file-text fa-lg contact-icon projectlink"></i></a>
                 </div>
         </div>
 
@@ -459,12 +461,16 @@ $(function() {
         });
     });
 var pattern = Trianglify({
-        width: window.innerWidth, 
-        height: window.innerHeight
+        height: 300, 
+        width: 300,
+        cell_size: 40
     });
-    $('#contact').body.appendChild(pattern.canvas())
-
-
+/*
+document.getElementById("contact").style.backgroundImage = 'url/' + pattern.png() + ')';
+*/
+/*
+pattern.canvas(document.getElementById('myCanvas'));
+*/
 </script>
 
 
