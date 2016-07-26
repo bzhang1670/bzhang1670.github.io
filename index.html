@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!-- 
 TODO: Table for Experience, fix skills, contact me background
@@ -27,12 +27,7 @@ TODO: Table for Experience, fix skills, contact me background
   
 <!--<![endif]-->
 
-
-
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css">
-
-
-
   
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/styling-old-ie.css">
@@ -131,9 +126,6 @@ TODO: Table for Experience, fix skills, contact me background
         <p class="splash-subhead">
             Software Engineer
         </p>
-        <p>
-            <!--<a href="http://purecss.io" class="pure-button pure-button-primary">About Me</a>-->
-        </p>
     </div>
 </div>
 
@@ -144,6 +136,19 @@ TODO: Table for Experience, fix skills, contact me background
         <h2 class="content-head is-center">Projects</h2>
 
         <div class="pure-g">
+
+            <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 projectcontainer">
+                <img src="img/common/borrowtmrw.png" width="300" height="200">
+                <h3 style="color: #1f8dd6;">
+                    Borrow Tomorrow (WIP)
+                </h3>
+                <h4> Software </h4>
+                <p>
+                    Built an online peer-to-peer borrowing/lending service, aimed at enabling the
+                    mostly untouched shared-items economy. 
+                </p>
+
+            </div>
 
             <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 projectcontainer">
                 <img src="img/common/Jauntlet.png" width="300" height="200">
@@ -306,7 +311,8 @@ TODO: Table for Experience, fix skills, contact me background
     <!-- <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5"> -->
 
     <div id="about">
-        <div class="content">
+
+        <div class="content" style="padding-bottom:100px">
                  <h2 class="content-head is-center" align="center">Education</h2> <!--content-head-ribbon-->
 
                  <table style="width:100%">
@@ -341,9 +347,20 @@ TODO: Table for Experience, fix skills, contact me background
 
             <table class="table">
                 <tr>
-                    <td align="center"><img src="img/common/fapllogo.png" style="height:50px;"></td>
-                    <td><a href="http://fapl.co/"><b>FAPL</b></a><br> <span class="text-muted">Programmer</span></td> 
-                    <td><b>Los Angeles</b><br> January 2015 – Current </td>
+                    <td align="center"><img src="img/common/expedia_logo.png" style="height:50px;"></td>
+                    <td><a href="http://www.expediainc.com/"><b>Expedia, Inc.</b></a><br> <span class="text-muted">
+                    Software Engineering Intern</span></td> 
+                    <td><b>San Francisco</b><br> June 2016 – August 2016 </td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="img/common/usc_viterbi_logo_transparent.png" style="height:50px;"></td>
+                    <td><a href="https://robotics.usc.edu/"><b>USC Robotics Lab</b></a><br> <span class="text-muted">Research Assistant</span></td> 
+                    <td><b>Los Angeles</b><br> March 2016 – May 2016 </td>
+                </tr>
+                <tr>
+                    <td align="center"><img src="img/common/fapl_logo_new.png" style="height:50px;"></td>
+                    <td><a href="http://fapl.co/"><b>Fashion & People</b></a><br> <span class="text-muted">Software Engineering Intern</span></td> 
+                    <td><b>Los Angeles</b><br> January 2016 – February 2016 </td>
                 </tr>
                 <tr>
                     <td align="center"><img src="img/common/mixspottmp.png" style="height:50px;"></td>
@@ -351,9 +368,9 @@ TODO: Table for Experience, fix skills, contact me background
                     <td><b>New York</b><br>July 2015 – August 2015</td>
                 </tr>
                 <tr>
-                    <td align="center"><img src="img/common/usc_viterbi_logo_transparent.png" style="height:50px;"></td>
-                    <td><a href="http://viterbi.usc.edu/"><b>Viterbi Mobile Web Developer</b></a> <br><span class="text-muted">Programmer</span></td> 
-                    <td><b>University of Southern California</b><br>September 2014 – December 2014</td>
+                    <td align="center"><img src="img/common/octopart_cog.png" style="height:50px;"></td>
+                    <td><a href="https://octopart.com"><b>Octopart</b></a><br><span class="text-muted">Software Engineering Intern</span></td> 
+                    <td><b>New York</b><br>September 2014 – October 2014</td>
                 </tr>
                 <tr>
                     <td align="center"> <img src="img/common/SBCScropped.png" style="width:50px;"></td>
@@ -406,6 +423,8 @@ TODO: Table for Experience, fix skills, contact me background
                                         AngularJS <br>
                                         MongoDB <br>
                                         Android <br>
+                                        flex <br>
+                                        bison <br>
                                     </b> 
                                     <br>
                                         Knowledge of data <br>
@@ -474,8 +493,7 @@ TODO: Table for Experience, fix skills, contact me background
             </div> 
         </div>
 
-        <div id="contact" class="content" style="background-image: url('img/common/pattern.png');
-                                                 background-size: cover;
+        <div id="contact" class="content" style="background-size: cover;
                                                  background-repeat: no-repeat;
                                                  overflow: auto;
                                                  height: 600px;">
@@ -492,7 +510,7 @@ TODO: Table for Experience, fix skills, contact me background
         </div>
 
         <div class="footer l-box is-center">
-            Website of <span style="color:white;">Brian Zhang</span>. Last updated <span style="color:white;">January 2016</span>.
+            Website of <span style="color:white;">Brian Zhang</span>. Last updated <span style="color:white;">July 2016</span>.
         </div>
 </div>
 
@@ -512,17 +530,14 @@ $(function() {
         }
         });
     });
+
 var pattern = Trianglify({
-        height: 300, 
-        width: 300,
+        height: 800, 
+        width: 1280,
         cell_size: 40
     });
-/*
-document.getElementById("contact").style.backgroundImage = 'url/' + pattern.png() + ')';
-*/
-/*
-pattern.canvas(document.getElementById('myCanvas'));
-*/
+document.getElementById('contact').style.backgroundImage =  "url('" + pattern.png() + "')";
+
 </script>
 
 
