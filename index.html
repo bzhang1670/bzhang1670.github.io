@@ -106,7 +106,7 @@ TODO: Table for Experience, fix skills, contact me background
  }
 
 </style>
-<body>
+<body onresize="resizeFunction()">
 
 <div id="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
@@ -531,12 +531,31 @@ $(function() {
         });
     });
 
+var lastwidth = document.body.clientWidth;
+
+console.log("lastwidth start:" + lastwidth);
+
 var pattern = Trianglify({
         height: 800, 
         width: 1280,
         cell_size: 40
     });
 document.getElementById('contact').style.backgroundImage =  "url('" + pattern.png() + "')";
+
+var resizeFunction = function() {
+    console.log("lastwidth: " + lastwidth + ", document width: " + document.width);
+    if(document.body.clientWidth - lastwidth > 150 || lastwidth - document.body.clientWidth > 150) {
+        var pattern = Trianglify({
+            height: 800, 
+            width: 1280,
+            cell_size: 40
+        });
+        document.getElementById('contact').style.backgroundImage =  "url('" + pattern.png() + "')";
+        lastwidth = document.body.clientWidth;
+    } else {
+        return;
+    }
+}
 
 </script>
 
