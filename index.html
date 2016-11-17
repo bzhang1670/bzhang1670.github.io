@@ -596,7 +596,7 @@ var resizeFunction = function() {
     var count = snapshot.visitorcount;
 
     database.set({
-        visitorcount: (count+1)
+        'visitorcount': (count+1)
     });
 
     /*database.update(update).then(() => {
