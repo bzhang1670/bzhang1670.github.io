@@ -592,17 +592,18 @@ var resizeFunction = function() {
   };
   firebase.initializeApp(config);
   var database = firebase.database().ref('/');
-  database;
   database.once('value').then(function(snapshot) {
-    var update = {};
     var count = snapshot.visitorcount;
-    update['visitorcount'] = ++count;
 
-    database.update(update).then(() => {
+    database.set({
+        visitorcount: (count+1)
+    });
+
+    /*database.update(update).then(() => {
         console.log("visitor update success");
     }).catch(error => {
         console.log("visitor update failed", error);
-    })
+    })*/
 
   });
 </script>
