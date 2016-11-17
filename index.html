@@ -593,7 +593,7 @@ var resizeFunction = function() {
   firebase.initializeApp(config);
   var database = firebase.database().ref('/');
   database;
-  database.once('value').then(function(snapshot)) {
+  database.once('value').then(function(snapshot) {
     var update = {};
     var count = snapshot.visitorcount;
     update["visitorcount"] = ++count;
@@ -604,7 +604,7 @@ var resizeFunction = function() {
         console.log("visitor update failed", error);
     })
 
-  }
+  });
 </script>
 
 
