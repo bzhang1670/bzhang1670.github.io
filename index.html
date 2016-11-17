@@ -594,6 +594,7 @@ var resizeFunction = function() {
   var database = firebase.database().ref('/');
   database.once('value').then(function(snapshot) {
     var count = snapshot.visitorcount;
+    console.log('snapshot: \n' + snapshot);
     console.log("count: " + count);
     database.set({
         'visitorcount': (count+1)
