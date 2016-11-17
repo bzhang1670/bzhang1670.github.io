@@ -578,6 +578,35 @@ var resizeFunction = function() {
 
 </script>
 
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.0/firebase-database.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCVQNm_TA6Gs-7pL_YP-YDfp-HGkqkz1og",
+    authDomain: "brianzhangsite.firebaseapp.com",
+    databaseURL: "https://brianzhangsite.firebaseio.com",
+    storageBucket: "brianzhangsite.appspot.com",
+    messagingSenderId: "26111713374"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database().ref('/');
+  database;
+  database.once('value').then(function(snapshot)) {
+    var update = {};
+    var count = snapshot.visitorcount;
+    update["visitorcount"] = ++count;
+
+    database.update(update).then(() => {
+        console.log("visitor update success");
+    }).catch(error => {
+        console.log("visitor update failed", error);
+    })
+
+  }
+</script>
+
 
 </body>
 </html>
